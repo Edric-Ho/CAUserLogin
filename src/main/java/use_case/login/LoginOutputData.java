@@ -9,6 +9,7 @@ public class LoginOutputData {
     private final boolean useCaseFailed;
 
     public LoginOutputData(String username, boolean useCaseFailed) {
+
         this.username = username;
         this.useCaseFailed = useCaseFailed;
     }

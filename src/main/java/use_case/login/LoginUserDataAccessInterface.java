@@ -15,6 +15,12 @@ public interface LoginUserDataAccessInterface {
     boolean existsByName(String username);
 
     /**
+     * Sets the current user.
+     * @param username the username of the user to set as the current user
+     */
+    void setCurrentUser(String username);
+
+    /**
      * Saves the user.
      * @param user the user to save
      */
@@ -27,4 +33,9 @@ public interface LoginUserDataAccessInterface {
      */
     User get(String username);
 
+    /**
+     * Returns the current logged-in user.
+     * @return the username of the current user, or null if no user is logged in
+     */
+    String getCurrentUser();
 }
